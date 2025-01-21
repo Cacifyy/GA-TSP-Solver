@@ -7,11 +7,6 @@ This project implements a Genetic Algorithm (GA) to solve the Traveling Salesman
 2. **main.py**: Acts as the entry point for running the algorithm and visualizing the results.
 3. **evaluation.py**: Provides utility functions for measuring route distances and plotting routes.
 
-## Authors
-- Mohammed Arab
-- Ben Cacic
-- Andrew Phan
-
 ---
 
 ## Key Features
