@@ -1,0 +1,24 @@
+Question 1:
+For a problem with 100 cities, how long would it take to exhaustively examine every possible route?
+State your assumptions and explain how you arrived at your answer.
+Since there is 100 cities and you have to find each possible route, that means we have to find each permutation. The 
+starting city will be in a fixed position which can reduce the number of permutations by a factor of 100.
+For a 100 cities the perms would be (100-1)! = 99! = 9.3326 x 10^155 routes.
+Since this is a lot of routes, we can assume that it takes a nanosecond to calculate a route.
+A nanosecond is 10^-9 seconds so (9.3326 x 10^155 routes) x (10^-9 seconds/route) = (9.3326 x 10^146 seconds)
+(9.3326 x 10^146 seconds) / (31557600 seconds/year) = 2.957 x 10^139
+
+
+Question 2:
+What can you say about the time complexity of your approach? (ignore the time limit)
+From what we found about genetic algorithm, the time complexity of genetic algorithms is O(g(nm + nm + n)).
+g is th number of generations, n the population size and m the size of the individuals. 
+The time complexity depends mostly on population size and the number of cities.
+It ends up simplifying to O(g x n x m).
+
+Question 3:
+If your program was seen as an "agent program", which of the agent types discussed in class would it be?
+Our program can be defined as a goal-based agent. An argument could be made that utily based mechanisms 
+are taking place such as defining how valuable a specific state is, but the program is ultimately using
+fitness, mutation, crossover, and selection to achieve its goal. Which is to find a route to reduce the 
+travel distance in between cities.
